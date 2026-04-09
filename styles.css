@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-image: repeating-linear-gradient(to right,
@@ -5,6 +11,44 @@ body {
             #ffe4ec 120px,
             #fff6f9 120px,
             #fff6f9 140px);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  color: #5a3e45;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  color: #5a3e45;
+
+  transition: 0.2s ease;
 }
 
 .garland {
@@ -24,6 +68,28 @@ body {
     flex-direction: column;
     justify-content: center;
     z-index: -1;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 80px;
+    color: #5a3e45;
+
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 24px;
+    color: #5a3e45;
+
+    text-align: center; 
+    padding-top: 0%;
 }
 
 .bottom-garland {
