@@ -51,6 +51,26 @@ body {
   transition: 0.2s ease;
 }
 
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #f3a6c3;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 .garland {
     position: absolute;
     top: 0;
@@ -73,14 +93,20 @@ body {
 h1 {
     font-family: 'Fredoka', sans-serif;
     font-size: 80px;
-    color: #5a3e45;
+    color: #ff8fb1;
 
     text-align: center;
     margin-top: 5%;
     margin-bottom: 0%;
 
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+
+    text-shadow:
+    2px 2px 0 #ffffff,
+    4px 4px 0 #f1abc6,
+    0 0 10px rgba(255, 182, 193, 0.6);
+  
 }
 
 .subtitle {
@@ -90,6 +116,78 @@ h1 {
 
     text-align: center; 
     padding-top: 0%;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 100px auto 60px; /* centrerar + spacing */
+    text-align: center;
+
+    background: white;
+    padding: 24px 32px;
+    border-radius: 25px;
+    box-shadow: 0 6px 0 #f3a6c3;
+
+    border: 3px solid #f7c6d9;
+}
+
+.intro h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
+    color: #5a3e45;
+
+    margin-bottom: 12px;
+}
+
+.intro p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #5a3e45;
+
+    line-height: 1.6;
+}
+
+.cake-belt {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+  padding: 20px 0;
+}
+
+.cake-track {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: max-content;
+    animation: scroll-cakes 20s linear infinite;
+}
+
+.cake-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 60px;
+}
+
+.cake-group img {
+    width: 60px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.cake-track img {
+  width: 70px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+@keyframes scroll-cakes {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .bottom-garland {
