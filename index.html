@@ -4,47 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Munamii Cakery</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
     <section class="garland"></section>
     <header class="navbar">
-        <div class="logo">Munamii Cakery</div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Munamii Cakery logo">
+        </div>
 
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
                 <li><a href="/products.html">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
 
-
-    <h1>Munamii Cakery</h1>
-    <p class="subtitle">Sweet treats for every occasion</p>
+    <section class="home-hero">
+        <h1>Munamii Cakery</h1>
+        <p class="subtitle">Sweet treats for every occasion</p>
+    </section>
 
     <section class="intro">
         <img src="images/cake1.png" alt="cake" class="bg-cake">
 
         <h2>Welcome</h2>
         <p>
-        <p>
             We offer delicious cakes and cupcakes for every occasion.<br>
             Browse around and find your perfect treat.
-        </p>
         </p>
     </section>
 
     <div class="cta-buttons">
-        <button class="btn-primary">View Cakes</button>
-        <button class="btn-secondary">Order Now</button>
+        <a href="/products.html"><button class="btn-primary">View Products</button></a>
+        <a href="/contact.html"><button class="btn-secondary">Contact Us</button></a>
+    </div>
+
+      <div class="footer-links">
+        <a href="#" class="icon-link">
+            <span class="material-symbols-outlined">photo_camera</span>
+        </a>
+
+        <a href="#" class="icon-link">
+            <span class="material-symbols-outlined">thumb_up</span>
+        </a>
+
+        <a href="mailto:hello@munamiicakery.com" class="icon-link">
+            <span class="material-symbols-outlined">mail</span>
+        </a>
     </div>
 
     <section class="cake-belt">

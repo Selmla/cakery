@@ -34,6 +34,13 @@ body {
     letter-spacing: 1px;
 }
 
+.logo img {
+    height: 5rem;
+    /* justera om du vill */
+    width: auto;
+    display: block;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -96,7 +103,7 @@ h1 {
     color: #ffffff;
 
     text-align: center;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-bottom: 0%;
 
     letter-spacing: 2px;
@@ -115,6 +122,11 @@ h1 {
 
 }
 
+.home-hero {
+    text-align: center;
+    padding: 150px 20px 30px;
+}
+
 .subtitle {
     font-family: 'Fredoka', sans-serif;
     font-size: 24px;
@@ -127,15 +139,12 @@ h1 {
 .intro {
     position: relative;
     max-width: 700px;
-    margin: 100px auto 60px;
-    /* centrerar + spacing */
+    margin: 40px auto 60px;
     text-align: center;
-
     background: white;
     padding: 24px 32px;
     border-radius: 25px;
     box-shadow: 0 6px 0 #f3a6c3;
-
     border: 3px solid #f7c6d9;
 }
 
@@ -163,7 +172,8 @@ h1 {
     width: 150px;
     opacity: 0.9;
 
-    z-index: 1; /* bakom text */
+    z-index: 1;
+    /* bakom text */
     pointer-events: none;
 
     image-rendering: pixelated;
@@ -175,7 +185,8 @@ h1 {
     justify-content: center;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     padding: 10px 20px;
     border-radius: 12px;
     border: 2px solid #ff9ecb;
@@ -185,7 +196,8 @@ h1 {
     cursor: pointer;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
     background-color: #ff9ecb;
     color: white;
 }
@@ -252,7 +264,7 @@ h1 {
     z-index: 1000;
 }
 
-<!--------Products page styles-------->
+/* -------- Products page styles -------- */
 .products-hero {
     text-align: center;
     padding: 140px 20px 40px;
@@ -313,7 +325,7 @@ h1 {
 }
 
 .product-card:hover {
-     transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 10px 0 #f3a6c3;
 }
 
@@ -372,4 +384,235 @@ h1 {
         font-size: 1.5rem;
         line-height: 1.4;
     }
+}
+
+/* -------- About page styles -------- */
+
+.about-hero {
+    text-align: center;
+    padding: 140px 20px 40px;
+}
+
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.about-card {
+    position: relative;
+    background: white;
+    border: 3px solid #f7c6d9;
+    border-radius: 25px;
+    box-shadow: 0 6px 0 #f3a6c3;
+    padding: 32px;
+    text-align: center;
+    overflow: visible;
+}
+
+.about-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
+    color: #5a3e45;
+    margin-bottom: 16px;
+}
+
+.about-card p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #5a3e45;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 16px;
+}
+
+.about-decor {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 120px;
+    image-rendering: pixelated;
+    pointer-events: none;
+}
+
+.about-highlights {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.about-highlight-card {
+    background: white;
+    border: 3px solid #f7c6d9;
+    border-radius: 20px;
+    box-shadow: 0 6px 0 #f3a6c3;
+    padding: 24px;
+    text-align: center;
+}
+
+.about-highlight-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    color: #5a3e45;
+    margin-bottom: 10px;
+}
+
+.about-highlight-card p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #5a3e45;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-card {
+        padding: 24px 20px;
+    }
+
+    .about-decor {
+        width: 90px;
+        top: -20px;
+        right: -10px;
+    }
+}
+
+/* -------- Contact page styles -------- */
+
+.contact-hero {
+    text-align: center;
+    padding: 140px 20px 40px;
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.contact-card {
+    position: relative;
+    background: white;
+    border: 3px solid #f7c6d9;
+    border-radius: 25px;
+    box-shadow: 0 6px 0 #f3a6c3;
+    padding: 32px;
+    text-align: center;
+    overflow: visible;
+}
+
+.contact-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
+    color: #5a3e45;
+    margin-bottom: 16px;
+}
+
+.contact-card p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #5a3e45;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 16px;
+}
+
+.contact-decor {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 120px;
+    image-rendering: pixelated;
+    pointer-events: none;
+}
+
+.contact-highlights {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.contact-highlight-card {
+    background: white;
+    border: 3px solid #f7c6d9;
+    border-radius: 20px;
+    box-shadow: 0 6px 0 #f3a6c3;
+    padding: 24px;
+    text-align: center;
+}
+
+.contact-highlight-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    color: #5a3e45;
+    margin-bottom: 10px;
+}
+
+.contact-highlight-card p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #5a3e45;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .contact-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-card {
+        padding: 24px 20px;
+    }
+
+    .contact-decor {
+        width: 90px;
+        top: -20px;
+        right: -10px;
+    }
+}
+
+/* -------- Footer -------- */
+
+.footer {
+    text-align: center;
+    padding: 40px 20px 120px; /* extra botten pga garland */
+    font-family: 'Fredoka', sans-serif;
+    color: #5a3e45;
+}
+
+.footer-text {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5a3e45;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #d66b8f;
 }
